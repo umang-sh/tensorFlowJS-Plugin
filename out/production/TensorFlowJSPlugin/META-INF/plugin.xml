@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>com.tensorflowJS</id>
+  <name>TensorFlow JS</name>
+  <version>1.0</version>
+  <vendor email="umang.ipu@mgmail.com" url="http://umangsharma.in">Umang Sharma</vendor>
+
+  <description><![CDATA[
+     Now use TensorFlow JS with your Favorite JetBrains IDE with features like Code Completion,Error highlighting etc<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="174.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>JavaScript</depends>
+  <extensions defaultExtensionNs="com.intellij">
+      <fileTypeFactory implementation="com.tensorflowJS.TensorFlowJSLanguageFileFactory"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
